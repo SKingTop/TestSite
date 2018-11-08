@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css"><!-- Подключение файла стилей -->
+	<link rel="shortcut icon" href="icon/title/favicon.ico"><!-- Подключение иконки для вкладки -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test Site</title>
+</head>
+<body>
+	<div class="container">
+		<div class="leftBlock">
+			<div class="leftItem" id="menu"><a href="#"><p><img src="icon/menu/menu.png">Меню</p></a></div>
+			<div class="leftItem"><a href="#"><p><img src="icon/menu/link.png">Первая ссылка</p></a></div>
+			<div class="leftItem"><a href="#"><p><img src="icon/menu/link.png">Вторая ссылка</p></a></div>
+			<div class="leftItem"><a href="#"><p><img src="icon/menu/link.png">Третья ссылка</p></a></div>
+			<div class="personalCabinet"><a href="#"><p><img src="icon/menu/user.png">Личный кабинет</p></a></div>
+			<div class="exit"><a href="#"><p><img src="icon/menu/exit.png">Выход</p></a></div>
+		</div>
+		<!-- Правый блок начало -->
+		<div class="rightBlock">
+			<!-- Заголвок начало -->
+			<header><h1>Заголовок страницы</h1>
+				<p>В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол</p>
+			</header>
+			<!-- Заголвок конец -->
+			<!-- Элемент правого блока начало -->
+			<div class="rightItem">
+				<p>Информация об оплате:</p><br><br>
+				<p>Номер счета: <span class="schetNumber" id="schetNumber">98798465684</span></p><br>
+				<p>Сумма платежа: <span class="summ" id="summ">125 руб.</span></p><br>
+				<p id="dannye">Данные банковской карты:</p><br>
+				<form name="payForm" id="payFormId" method="post"><div class="card">
+					<!-- Лицевая торона карты начало -->
+					<div class="frontSide" id="frontSide"><p>Номер карты</p>
+						<div class="nomer">
+							<input id="nomer1" placeholder="XXXX"name="nomer1" type="text" maxlength="4" class="nomer1" pattern="[0-9]{4}" required form="payForm" title="Введите четырех значное число">
+							<input id="nomer2" placeholder="XXXX"name="nomer2" type="text" maxlength="4" class="nomer2" pattern="[0-9]{4}" required form="payForm" title="Введите четырех значное число">
+							<input id="nomer3" placeholder="XXXX"name="nomer3" type="text" maxlength="4" class="nomer3" pattern="[0-9]{4}" required form="payForm" title="Введите четырех значное число">
+							<input id="nomer4" placeholder="XXXX"name="nomer4" type="text" maxlength="4" class="nomer4" pattern="[0-9]{4}" required form="payForm" title="Введите четырех значное число">
+						</div>
+						<p>Срок действия</p>
+						<div class="data">
+							<span class="month">
+								<select name="mouth" id="month" class="month" required form="payForm" title="Выберите месяц"></select>
+							</span>
+							<span class="year">
+								<select name="year" id="year" class="year" required form="payForm" title="Выберите год"></select>
+							</span>
+						</div><br>
+						<div class="name"><input type="text" placeholder="Держатель карты" name="name" id="name" required form="payForm" title="Введите имя и фамилию"></div>
+					</div>
+					<!-- Лицевая торона карты конец -->
+					<!-- Задняя сторона карты начало -->
+					<div class="backSide" id="backSide">
+						<br><hr>
+						<p class="cvv">Код CVV2/CVC2</p>
+						<div class="cvvInput"><input type="text" pattern="[0-9]{3}" maxlength="3" id="cvv" name="cvv" class="cvvField" required form="payForm" title="Введите CVV код (Трехзначное число на обратной стороне карты)"></div>
+					</div>
+					<!-- Задняя сторона карты конец -->
+					<div class="btn"><input type="submit" value="Оплатить" id="sendButton" title="Нажмите чтобы оплатить"></div>
+				</div>
+			</form>
+		</div>
+		<!-- Элемент правого блока конец -->
+		<!-- Футер  начало-->
+		<footer><p>Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p><br>
+			<p>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p><br>
+			<p>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p><br>
+			<p>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p></footer>
+			<!-- Футер конец-->
+		</div>
+		<!-- Правый блок конец -->
+	</div>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="js/script.js"></script><!-- Подключение файла скриптов -->
+</body>
+</html>

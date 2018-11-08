@@ -1,0 +1,572 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: OpenSans-Bold, Arial;
+}
+#nomer,
+#month,
+#year,
+option,
+#name ,
+#cvv {
+	font-family: Arial !important;
+	color: #000000 !important;
+}
+@font-face {
+	font-family: OpenSans-Bold;
+	src: url(../fonts/OpenSans-Bold.ttf);
+	font-weight: bold;
+}
+img {
+	display: none;
+}
+body {
+	background-color: #101114;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.error {
+	border: 1px solid #FF0000 !important;
+}
+h1 {/*////////////////////////////Заголовок начало///////////////////////////////*/
+	padding-top: 30px;
+	padding-left: 25px;
+	padding-bottom: 5px;
+	font-size: 2em;
+	color: #FFFFFF;
+}/*////////////////////////////Заголовок конец///////////////////////////////*/
+header {/*////////////////////////////Шапка начало///////////////////////////////*/
+	width: 100%;
+	height: 196px;
+	background-color: #00AEEF;
+}
+header p {
+	padding-top: 10px;
+	padding-left: 25px;	
+	padding-right: 50px;
+	font-size: 1em;
+	color: #FFFFFF;
+	font-family: Arial;
+}/*////////////////////////////Шапка конец///////////////////////////////*/
+footer p {/*////////////////////////////Подвал начало///////////////////////////////*/
+	padding-left: 25px;	
+	padding-right: 25px;
+	font-size: 0.8em;
+	color: #89909D;
+	font-family: Arial;
+}
+footer {
+	padding-top:15px; 
+	height: 253px;
+	background-color: #373C43;
+}/*////////////////////////////Подвал конец///////////////////////////////*/
+.container {/*////////////////////////////Основной контейнер начало///////////////////////////////*/
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-content: space-between;
+	    -ms-flex-line-pack: justify;
+	        align-content: space-between;
+}/*////////////////////////////Основной контейнер конец///////////////////////////////*/
+#menu {/*////////////////////////////Левый блок начало///////////////////////////////*/
+	display: none;
+}
+.leftBlock {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-color: #1F2229;
+	width: 318px;
+	height: 538px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+.personalCabinet,
+.exit,
+.leftItem {
+	width: 318px;
+	height: 75px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.personalCabinet,
+.exit {
+	background-color: #191C24;
+}
+.leftItem {
+	background-color: #1F2229;
+}
+.personalCabinet p,
+.exit p {
+	color: #808592;
+}
+span {
+	font-family: Arial;
+	color: #000000;
+}
+.personalCabinet a,
+.exit a,
+.leftItem a {
+	text-decoration: none;
+	color:#FFFFFF;
+	font-size: 15px;
+}
+.personalCabinet p,
+.exit p,
+.leftItem p {
+	padding: 25px 25px;
+}
+.leftItem:hover,
+.personalCabinet:hover,
+.exit:hover {
+	background-color: #2A2D37;
+}
+.personalCabinet a:active,
+.exit a:active,
+.leftItem a:active {
+	color:#808592;
+	background-color: #2A2D37;
+}/*////////////////////////////Левый блок конец///////////////////////////////*/
+.rightBlock {/*////////////////////////////Правый блок начало///////////////////////////////*/
+	width: 639px;
+	height: 1018px;
+	background-color: #F7F8F8;
+}
+.rightItem {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-color: #F7F8F8;
+	width: 100%;
+	height: 569px;
+	padding: 25px;
+}
+.rightItem p {
+	font-size: 1em;
+	color: #8998AE;
+	}	
+#dannye {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #383D43;
+}	
+.card {
+	width: 564px;
+	height: 300px;
+	position: relative;
+}
+#frontSide {
+	z-index: 1;
+}
+.frontSide {
+	position: absolute;
+	width: 350px;
+	height: 236px;
+	border: 1px solid #707070; 
+	border-radius: 10px;
+	background-color: #F7F8F8;
+}
+#backSide {
+	z-index: 0;
+}
+.backSide {
+	width: 350px;
+	height: 236px;
+	border: 1px solid #707070; 
+	position: absolute;
+	top: 30px;
+	left: 210px;
+	border-radius: 10px;
+}
+.frontSide p {
+	padding: 15px;
+}
+.nomer {
+	margin: 0;
+	margin-left: 15px;
+}
+.nomer input{
+	text-align: center;
+	border: 1px solid #7A7A7A;
+}
+.data {
+	margin: 0;
+	margin-left: 15px;
+}
+.name {
+	margin: 0;
+	margin-left: 15px;
+}
+.nomer input {
+	margin-left: 9px;
+	width: 60px;
+	height: 30px;
+	font-family: Arial;
+	border: 1px solid #7A7A7A;
+}
+.month input,
+.month select{
+	margin-left: 9px;
+	width: 50px;
+	height: 25px;
+	padding-left: 10px;
+	border: 1px solid #7A7A7A;
+}
+.year input,
+.year select {
+	margin-left: 9px;
+	width: 70px;
+	height: 25px;
+	padding-left: 10px;
+	border: 1px solid #7A7A7A;
+}
+.name input {
+	margin-left: 9px;
+	padding-left: 10px;
+	width: 85%;
+	height: 30px;
+	color: #808080;
+	font-family: Arial;
+	border: 1px solid #7A7A7A;
+}
+.btn input {
+	position: absolute;
+	bottom: 0px;
+	width: 173px;
+	height: 40px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#9CC607), to(#83A40C));
+	background: -webkit-linear-gradient(top, #9CC607, #83A40C);
+	background: -o-linear-gradient(top, #9CC607, #83A40C);
+	background: linear-gradient(180deg, #9CC607, #83A40C);
+	border-radius: 5px;
+	font-size: 1em;
+	color: #FFFFFF;
+	border: 0 none;
+}
+.btn:hover input {
+	background: -webkit-gradient(linear, left top, left bottom, from(#0246D0), to(#5C63B4));
+	background: -webkit-linear-gradient(top, #0246D0, #5C63B4);
+	background: -o-linear-gradient(top, #0246D0, #5C63B4);
+	background: linear-gradient(180deg, #0246D0, #5C63B4);
+}
+hr {
+	border: none;
+	height: 40px;
+	background-color: #7E7D7D;
+}
+.cvv {
+	padding: 15px;
+	padding-bottom: 5px;
+	text-align: right;
+	font-family: Arial;
+}
+.cvvInput input {
+	margin-left: 218px;
+	width: 100px;
+	height: 25px;
+	padding-left: 10px;
+	border: 1px solid #7A7A7A;
+}
+.rightItem p{
+	font-family: Arial;
+}/*////////////////////////////Правый блок конец///////////////////////////////*/
+@media only screen and (max-width: 999px){/*////////////////////////////@Media 999px///////////////////////////////*/
+.leftBlock {
+	width: 150px;
+	height: 468px;
+}
+.rightBlock {
+	width: 550px;
+	height: 960px;
+}
+.personalCabinet a,
+.exit a,
+.leftItem a {
+	font-size: 11px;
+}
+.personalCabinet,
+.exit,
+.leftItem {
+	width: 150px;
+	height: 60px;
+}
+h1 {
+	padding-top: 30px;
+	padding-left: 25px;
+	padding-bottom: 5px;
+	font-size: 1.5em;
+	color: #FFFFFF;
+}
+header {
+	height: 156px;
+}
+
+header p {
+	font-size: 0.8em;
+}
+footer p {
+	font-size: 0.7em;
+}
+footer {
+	height: 243px;
+}
+.rightItem {
+	height: 549px;
+}
+.rightItem p {
+	font-size: 0.8em;
+	}	
+#dannye {
+	font-size: 1.2em;
+	}	
+.card {
+	width: 530px;
+	height: 320px;
+	position: relative;
+}
+#frontSide {
+	z-index: 1;
+}
+.frontSide {
+	position: absolute;
+	width: 340px;
+	height: 226px;	
+}
+#backSide {
+	z-index: 0;
+}
+.backSide {
+	width: 340px;
+	height: 226px;
+	position: absolute;
+	left: 150px;
+}
+.cvv {
+	padding: 15px;
+	padding-bottom: 5px;
+	text-align: right;
+	font-family: Arial;
+}
+.cvvInput input {
+	margin-left: 230px;
+	width: 84px;
+}
+}
+@media only screen and (max-width: 767px){/*////////////////////////////@Media 767px///////////////////////////////*/
+img {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	padding-top: 6px;
+	padding-right: 15px;
+}
+body {
+	height: 100%;
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
+h1 {
+	font-size: 1.5em;
+}
+header {
+	height: 176px;
+}
+header p {
+	font-size: 0.9em;
+}
+.container {
+	position: relative;
+}
+#menu {
+	display: block;
+}
+.leftBlock {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	overflow:hidden;
+	z-index: 1;
+}
+.leftBlock:hover{
+	height: 300px;
+}
+.personalCabinet,
+.exit,
+.leftItem {
+	width: 100%;
+	height: 50px;
+}
+.personalCabinet,
+.exit {
+	background-color: #191C24;
+}
+.leftItem {
+	background-color: #1F2229;
+}
+.personalCabinet p,
+.exit p {
+	color: #808592;
+}
+span {
+	font-size: 14px;
+}
+.personalCabinet a,
+.exit a,
+.leftItem a {
+	font-size: 14px;
+}
+.personalCabinet p,
+.exit p,
+.leftItem p {
+	padding: 9px 25px;
+}
+.leftItem:hover,
+.personalCabinet:hover,
+.exit:hover {
+	background-color: #2A2D37;
+}
+.personalCabinet a:active,
+.exit a:active,
+.leftItem a:active {
+	color:#808592;
+	background-color: #2A2D37;
+}
+.rightBlock {
+	position: relative;
+	z-index: 0;
+	top: 50px;
+	width: 100%;
+	height: 1200px;
+}
+.rightItem {
+	width: 100%;
+	height: 800px;
+	}	
+.rightItem p {
+	font-size: 0.9em;
+	}	
+#dannye {
+	font-size: 1.2em;
+	}	
+.card {
+	width: 360px;
+	height: 550px;
+	position: relative;
+	margin: auto;
+}
+#frontSide {
+	z-index: 1;
+}
+.frontSide {
+	position: absolute;
+	width: 350px;
+	height: 236px; 	
+}
+#backSide {
+	z-index: 0;
+}
+.backSide {
+	width: 350px;
+	height: 236px;
+	position: absolute;
+	top: 250px;
+	left: 0px;
+}
+.cvvInput input {
+	margin-left: 227px;
+	width: 100px;
+	height: 25px;
+}
+.btn input {
+	position: absolute;
+	bottom: -20px;
+	margin-left: 20%;
+}
+}
+@media only screen and (max-width: 479px){/*////////////////////////////@Media 479px///////////////////////////////*/
+.card {
+	width:280px;
+	height: 470px;
+	margin: auto;
+}
+.frontSide {
+	width: 280px;
+	height: 200px;	
+}
+.backSide {
+	width: 280px;
+	height: 200px;
+	top: 210px;
+	left: 0px;
+}
+.frontSide p {
+	padding: 10px;
+}
+.nomer {
+	margin: 0;
+	margin-left: 5px;
+}
+.nomer input{
+	width: 50px;
+	text-align: center;
+	border: 1px solid #7A7A7A;
+}
+.data {
+	margin: 0;
+	margin-left: 5px;
+}
+.name {
+	margin: 0;
+	margin-left: 5px;
+}
+.month input,
+.month select {
+	width: 40px;
+}
+.year input,
+.year select {
+	width: 60px;
+}
+.btn input {
+	bottom: 0px;
+}
+.cvvInput input {
+	margin-left: 160px;
+	width: 95px;
+}
+footer {
+	height: 340px;
+}
+}
+@media only screen and (max-width: 319px){/*////////////////////////////@Media 319px///////////////////////////////*/
+footer {
+	height: 360px;
+}
+}
